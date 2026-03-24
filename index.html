@@ -9,7 +9,7 @@
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500&family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     
@@ -17,68 +17,45 @@
 </head>
 <body class="dark-mode">
 
-    <!-- Noise texture overlay -->
-    <div class="noise-overlay"></div>
-
-    <header class="main-header">
-        <div class="container header-inner">
-            <div class="logo-container">
-                <img src="assets/images/logo.png" alt="Logo Zinrã Salvino" class="logo-image" style="height: 40px; width: auto;">
-            </div>
-            <nav class="main-nav">
-                <ul>
-                    <li><a href="#home" class="nav-link">[ HOME ]</a></li>
-                    <li><a href="#sobre" class="nav-link">[ SOBRE ]</a></li>
-                    <li><a href="#projetos" class="nav-link">[ PROJETOS ]</a></li>
-                    <li><a href="#contato" class="nav-link">[ CONTATO ]</a></li>
-                    <li>
-                        <button class="theme-toggle" id="themeToggle" title="Alternar tema">
-                            <i class="fas fa-sun"></i>
-                        </button>
-                    </li>
-                </ul>
-            </nav>
+    <header class="main-header container">
+        <div class="logo-container">
+            <img src="assets/images/logo.png" alt="Logo Zinrã Salvino" class="logo-image" style="height: 40px; width: auto;">
         </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#home" class="nav-link">[ HOME ]</a></li>
+                <li><a href="#sobre" class="nav-link">[ SOBRE ]</a></li>
+                <li><a href="#projetos" class="nav-link">[ PROJETOS ]</a></li>
+                <li><a href="#contato" class="nav-link">[ CONTATO ]</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
         <section id="home" class="hero-section">
-            <div class="hero-grid-bg"></div>
-            <div class="hero-scanlines"></div>
+            <div class="hero-bg-lines"></div>
             <div class="container hero-content">
-                <div class="hero-eyebrow">
-                    <span class="hero-prompt">~/portfolio</span>
-                    <span class="hero-cursor-blink">_</span>
-                </div>
                 <h1 class="hero-title">ZINRÃ SALVINO</h1>
                 <p class="hero-subtitle">ANALISTA E DESENVOLVEDOR DE SISTEMAS | SOLUCIONADOR DE PROBLEMAS TÉCNICOS</p>
-                <div class="hero-divider"></div>
                 <div class="hero-action">
                     <a href="#projetos" class="btn btn-primary">[ VER PORTFÓLIO ]</a>
-                    <a href="#contato" class="btn btn-ghost">[ CONTATO ]</a>
                 </div>
-            </div>
-            <div class="hero-scroll-indicator">
-                <span class="scroll-line"></span>
-                <span class="scroll-label">SCROLL</span>
             </div>
         </section>
 
-        <section id="sobre" class="about-section section-hidden">
+        <section id="sobre" class="about-section">
             <div class="container about-grid">
                 <div class="about-text-content">
-                    <div class="section-label">// 01</div>
-                    <h2 class="section-title">SOBRE</h2>
-                    <h3 class="about-degree">
+                    <h3 style="font-family: var(--font-mono); color: var(--accent-color); margin-bottom: 1rem; font-size: 1.1rem;">
                         Graduando em Análise e Desenvolvimento de Sistemas – UNESA
                     </h3>
-                    <p class="about-paragraph">
+                    <p class="about-paragraph" style="margin-bottom: 1rem;">
                         Minha trajetória é impulsionada pela busca por eficiência e lógica. Da base analítica estudando Física na UFF à extrema resiliência e disciplina forjadas como campeão mundial de Jiu-Jitsu, trago essas habilidades para resolver problemas complexos na tecnologia.
                     </p>
-                    <p class="about-paragraph">
+                    <p class="about-paragraph" style="margin-bottom: 1rem;">
                         Hoje, sou um desenvolvedor com foco em soluções Full Stack e sólido interesse em UI/UX. Atualmente, curso Análise e Desenvolvimento de Sistemas na Estácio, onde busco o constante aprimoramento técnico e a aplicação de boas práticas de engenharia de software.
                     </p>
-                    <p class="about-paragraph">
+                    <p class="about-paragraph" style="margin-bottom: 2.5rem;">
                         Possuo experiência prática no desenvolvimento de sistemas web, utilizando tecnologias como HTML, CSS, JavaScript e PHP. Talvez eu esteja procurando estágio no momento que você estiver lendo isso (usuário ou recrutador).
                     </p>
                     
@@ -86,27 +63,18 @@
                         [ BAIXAR CURRÍCULO ]
                     </a>
                 </div>
-                <div class="about-visual">
-                    <div class="about-geo-wrapper">
-                        <div class="geo-ring geo-ring-1"></div>
-                        <div class="geo-ring geo-ring-2"></div>
-                        <div class="geo-ring geo-ring-3"></div>
-                        <div class="geo-core">
-                            <span class="geo-core-text">ZS</span>
-                        </div>
-                    </div>
+                <div class="about-geometry-container">
+                    <div class="about-polygon"></div>
                 </div>
             </div>
         </section>
 
-        <section id="projetos" class="projects-section section-hidden">
+        <section id="projetos" class="projects-section">
             <div class="container">
-                <div class="section-label">// 02</div>
                 <h2 class="section-title">PROJETOS</h2>
                 
                 <div class="projects-grid">
                     <article class="project-card">
-                        <div class="project-card-number">01</div>
                         <div class="project-card-inner">
                             <h3 class="project-title">BOT DE MENSAGENS P/ ALUNOS</h3>
                             <p class="project-description">
@@ -117,13 +85,11 @@
                                 <span class="stack-icon" title="JavaScript"><i class="fab fa-js-square"></i></span>
                                 <span class="stack-icon" title="WhatsApp API"><i class="fab fa-whatsapp"></i></span>
                             </div>
-                            <a href="#" target="_blank" class="project-link">[ VER NO GITHUB ] <i class="fas fa-arrow-right"></i></a>
+                            <a href="#" target="_blank" class="project-link">[ VER NO GITHUB ]</a>
                         </div>
-                        <div class="project-card-glow"></div>
                     </article>
 
                     <article class="project-card">
-                        <div class="project-card-number">02</div>
                         <div class="project-card-inner">
                             <h3 class="project-title">FILA VIRTUAL UNIVERSITÁRIA</h3>
                             <p class="project-description">
@@ -134,13 +100,11 @@
                                 <span class="stack-icon" title="React"><i class="fab fa-react"></i></span>
                                 <span class="stack-icon" title="Banco de Dados"><i class="fas fa-database"></i></span>
                             </div>
-                            <a href="#" target="_blank" class="project-link">[ VER NO GITHUB ] <i class="fas fa-arrow-right"></i></a>
+                            <a href="#" target="_blank" class="project-link">[ VER NO GITHUB ]</a>
                         </div>
-                        <div class="project-card-glow"></div>
                     </article>
 
                     <article class="project-card">
-                        <div class="project-card-number">03</div>
                         <div class="project-card-inner">
                             <h3 class="project-title">PORTFÓLIO MINIMALISTA</h3>
                             <p class="project-description">
@@ -151,54 +115,47 @@
                                 <span class="stack-icon" title="CSS3"><i class="fab fa-css3-alt"></i></span>
                                 <span class="stack-icon" title="JavaScript"><i class="fab fa-js"></i></span>
                             </div>
-                            <a href="#" target="_blank" class="project-link">[ VER NO GITHUB ] <i class="fas fa-arrow-right"></i></a>
+                            <a href="#" target="_blank" class="project-link">[ VER NO GITHUB ]</a>
                         </div>
-                        <div class="project-card-glow"></div>
                     </article>
                 </div>
             </div>
         </section>
 
-        <section id="contato" class="contact-section section-hidden">
-            <div class="container contact-inner">
-                <div class="section-label">// 03</div>
-                <h2 class="section-title" style="margin-bottom: 1rem;">CONTATO</h2>
+        <section id="contato" class="contact-section">
+            <div class="container" style="text-align: center; position: relative;">
+                <h2 class="section-title" style="margin-bottom: 2rem;">CONTATO</h2>
                 
-                <p class="contact-desc">
+                <p class="about-paragraph" style="max-width: 600px; margin: 0 auto 3rem auto; color: rgba(255,255,255,0.7);">
                     Estou sempre aberto a novas oportunidades de estágio, projetos ou apenas para trocar uma ideia sobre tecnologia. Escolha a melhor forma de falar comigo:
                 </p>
 
                 <div class="contact-links-grid">
                     <a href="mailto:contato.zinrasalvino@gmail.com" class="contact-link-box">
-                        <div class="contact-icon-wrap"><i class="far fa-envelope"></i></div>
+                        <i class="far fa-envelope"></i>
                         <span>Email</span>
-                        <i class="fas fa-arrow-right contact-arrow"></i>
                     </a>
                     <a href="https://www.linkedin.com/in/zinrasalvino/" target="_blank" class="contact-link-box">
-                        <div class="contact-icon-wrap"><i class="fab fa-linkedin"></i></div>
+                        <i class="fab fa-linkedin"></i>
                         <span>LinkedIn</span>
-                        <i class="fas fa-arrow-right contact-arrow"></i>
                     </a>
                     <a href="https://github.com/ZinraSalvino" target="_blank" class="contact-link-box">
-                        <div class="contact-icon-wrap"><i class="fab fa-github"></i></div>
+                        <i class="fab fa-github"></i>
                         <span>GitHub</span>
-                        <i class="fas fa-arrow-right contact-arrow"></i>
                     </a>
                     <a href="https://wa.me/5521998222791" target="_blank" class="contact-link-box">
-                        <div class="contact-icon-wrap"><i class="fab fa-whatsapp"></i></div>
+                        <i class="fab fa-whatsapp"></i>
                         <span>WhatsApp</span>
-                        <i class="fas fa-arrow-right contact-arrow"></i>
                     </a>
                 </div>
+                
+                <div class="contact-star-geometry" style="left: 50%; transform: translateX(-50%); bottom: -60px;"></div>
             </div>
         </section>
     </main>
 
-    <footer class="main-footer">
-        <div class="container footer-inner">
-            <p class="footer-copy">&copy; 2026 Zinrã Salvino. Todos os direitos reservados.</p>
-            <p class="footer-stack">HTML · CSS · JS</p>
-        </div>
+    <footer class="main-footer container">
+        <p>&copy; 2026 Zinrã Salvino. Todos os direitos reservados.</p>
     </footer>
 
     <script src="js/scripts.js"></script>
