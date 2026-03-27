@@ -18,11 +18,3 @@ A ideia central foi construir uma interface de alta fidelidade totalmente do zer
 * **Seção Sobre:** Um resumo da minha trajetória, unindo a base analítica da Física, a disciplina do esporte de alto rendimento e meu foco atual em Análise e Desenvolvimento de Sistemas.
 * **Projetos:** Destaque para soluções full stack desenvolvidas, como o Bot de Mensagens via WhatsApp e o Sistema de Fila Virtual Universitária.
 * **Contato Direto:** Links otimizados para comunicação rápida (E-mail, LinkedIn, GitHub e WhatsApp).
-
-## 🛠️ Como rodar o projeto localmente
-
-Como o projeto é totalmente estático e não utiliza dependências ou processos de build, rodá-lo localmente é extremamente simples:
-
-1. Clone este repositório:
-   ```bash
-   git clone [https://github.com/ZinraSalvino/ZinraSalvino.github.io.git](https://github.com/ZinraSalvino/ZinraSalvino.github.io.git)
